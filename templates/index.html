@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intel-GPT</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"/>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Mche </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="get">Chatbot</a>
+        <a href="#categories">categories</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="disease-predict">Disease Prediction</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+  
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Discover Fresh and <span>Organic Seeds</span> for Your Garden</h3>
+        <p>Welcome to our seed haven! We take pride in offering a diverse selection of high-quality, organic seeds that will bring life and vitality to your garden.</p>
+        <a href="#products" class="btn">Explore Our Seed Collection</a>
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+            <h3>Quality Assurance:</h3>
+            <p>We source our seeds from trusted suppliers to ensure top-notch quality.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+            <h3>Expert Guidance:</h3>
+            <p>Have questions? Our team of gardening experts is here to help you with advice and tips.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+            <h3>Fast and Secure Delivery:</h3>
+            <p>Enjoy the convenience of doorstep delivery with our reliable shipping services</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- categories section starts  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/cat-1.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+            <h3>Vegetable Seeds:</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-2.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+            <h3>Grain Seeds</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-3.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+            <h3>Fruit Seeds:</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-4.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+            <h3>Flower Seeds:</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/product-1.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <h3>Corn Ambrosia</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-2.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <h3>TERMINATOR f1 (tomato)</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-3.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <h3>fresh meat</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-4.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <h3>DH01 (maize)</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/product-5.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <h3>KS Mwamba (wheat)</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-6.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <h3>KS Chui (wheat)</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-7.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <h3>Boma Rhodes (PASTURE) </h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-8.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <h3>EN-G NUT 1 (groundnuts)</h3>
+                <div class="price"> $4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- products section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <!-- <h3>john deo</h3> -->
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <!-- <h3>john deo</h3> -->
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+            <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <img src="image/pic-3.png" alt="">
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                 <img src="https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <!-- <img src="image/pic-4.png" alt=""> -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Mche <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +254-768500-572 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +254-768500-572 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> amosmaru10@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Nairobi, Kenya </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            
+        </div>
+
+       
+
+    </div>
+
+    
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script >
+    let searchForm = document.querySelector('.search-form');
+
+    document.querySelector('#search-btn').onclick = () =>{
+        searchForm.classList.toggle('active');
+        shoppingCart.classList.remove('active');
+        loginForm.classList.remove('active');
+        navbar.classList.remove('active');
+    }
+
+    let shoppingCart = document.querySelector('.shopping-cart');
+
+    document.querySelector('#cart-btn').onclick = () =>{
+        shoppingCart.classList.toggle('active');
+        searchForm.classList.remove('active');
+        loginForm.classList.remove('active');
+        navbar.classList.remove('active');
+    }
+
+    let loginForm = document.querySelector('.login-form');
+
+    document.querySelector('#login-btn').onclick = () =>{
+        loginForm.classList.toggle('active');
+        searchForm.classList.remove('active');
+        shoppingCart.classList.remove('active');
+        navbar.classList.remove('active');
+    }
+
+    let navbar = document.querySelector('.navbar');
+
+    document.querySelector('#menu-btn').onclick = () =>{
+        navbar.classList.toggle('active');
+        searchForm.classList.remove('active');
+        shoppingCart.classList.remove('active');
+        loginForm.classList.remove('active');
+    }
+
+    window.onscroll = () =>{
+        searchForm.classList.remove('active');
+        shoppingCart.classList.remove('active');
+        loginForm.classList.remove('active');
+        navbar.classList.remove('active');
+    }
+
+    var swiper = new Swiper(".product-slider", {
+        loop:true,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 7500,
+            disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1020: {
+            slidesPerView: 3,
+        },
+        },
+    });
+
+    var swiper = new Swiper(".review-slider", {
+        loop:true,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 7500,
+            disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1020: {
+            slidesPerView: 3,
+        },
+        },
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+	
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+	<style>
+        body {
+            background-color: #f8f9fa; /* Bootstrap light background color */
+            padding-top: 100px; /* Adjusted for the fixed navbar height */
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+	<header class="header">
+
+		<a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Mche </a>
+	
+		<nav class="navbar">
+			<a href="/">home</a>
+			<a href="get">Chatbot</a>
+			<a href="disease-predict">Disease-prediction</a>
+
+		</nav>
+	
+		<div class="icons">
+			<div class="fas fa-bars" id="menu-btn"></div>
+			<div class="fas fa-search" id="search-btn"></div>
+			<div class="fas fa-shopping-cart" id="cart-btn"></div>
+			<div class="fas fa-user" id="login-btn"></div>
+		</div>
+	</header>
+	
+	<!-- header section ends -->
+	
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <form method="post" action="/disease-predict" enctype="multipart/form-data">
+            <label for="file">Upload Image:</label>
+            <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png" required>
+            <button type="submit">Predict Disease</button>
+        </form>
+    </div>
+</body>
+</html>
